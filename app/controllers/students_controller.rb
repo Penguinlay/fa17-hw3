@@ -1,7 +1,7 @@
 # ============================================================================ #
 
-# File Name: teachers_controller.rb
-# Edited By: Penguinlay
+# File Name: students_controller.rb
+# Name: Penguinlay
 # Assignment: HW3
 # Course: CS 198 - Ruby on Rails - Fall 2017
 # Start: 2017092703
@@ -9,9 +9,11 @@
 
 # ============================================================================ #
 
-class TeachersController < ApplicationController
+class StudentsController < ApplicationController
     def new
-        @placeholder_course = "186"
+        @placeholder_full_name = "Baby Bubbly"
+        @placeholder_course = "123"
+        @placeholder_grade_level = "Kindergarten"
     end
 
     def create
