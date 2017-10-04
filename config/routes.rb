@@ -29,7 +29,8 @@
 
 Rails.application.routes.draw do
     # get
-    root "students#new"                 # restriction: won't update URL...
+    # root "students#new"                 # restriction: won't update URL...
+    root to: redirect("/students/new")      # URL is also updated now!
     get "/teachers/new", to: "teachers#new"
     get "/students/new", to: "students#new"
 
